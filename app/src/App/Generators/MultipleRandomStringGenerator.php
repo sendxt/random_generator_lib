@@ -10,8 +10,8 @@ class MultipleRandomStringGenerator
 
     public function __construct(
         private readonly int $arraySize = 2,
-        int                  $stringLength = 5
-    ){
+        readonly int $stringLength = 5
+    ) {
         $this->randomStringGenerator = new RandomStringGenerator($stringLength);
     }
 

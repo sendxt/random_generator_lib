@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace App\Generators;
 
-class RandomStringGenerator
+readonly class RandomStringGenerator
 {
-    public function __construct(private int $stringLength = 5){}
+    public function __construct(private int $stringLength = 5)
+    {
+    }
 
     public function generate(): string
     {
